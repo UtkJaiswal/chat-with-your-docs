@@ -1,4 +1,6 @@
-# How to setup Python notebook in VS Code
+## Application to chat with your documents
+
+### How to setup Python notebook in VS Code
 
 1. Create a file `main.py`
 
@@ -32,5 +34,28 @@ python -m ipykernel install --user --name=venv
 ```
 
 7. Select the kernel in VS Code on the top right and select venv
-![alt text](image.png)
+![Screenshot of the VS Code layout](image.png)
+
+
+
+### Installations
+
+Install the dependencies from the `requirements.txt` file
+
+```bash
+pip install -r requirements.txt
+```
+
+
+### Setup your Project
+
+- Create a `.env` file
+
+- Add the following:
+
+    ```
+    GEMINI_API_KEY = <YOUR GEMINI API KEY>
+    ```
+
+- Run the kernels step-by-step
 
